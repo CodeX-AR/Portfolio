@@ -1,0 +1,14 @@
+.footer {
+  padding: 0; 
+  margin: 0;
+  background: #0a0f1f;
+  color: #808080;
+  text-align:left;
+  font-size: 0.9rem;
+  font-family: 'Fira Code', monospace;
+}
+
+.footer p {
+  margin-top: 1rem;
+  padding: 0; 
+}

@@ -1,0 +1,116 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: #0a0f1f;
+  color: #00ffff;
+  padding: 0.4rem 1rem;
+  font-family: 'Fira Code', monospace;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #16263a;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  /* adds space after logo */
+}
+
+.navbar .nav-links {
+  display: flex;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.navbar .nav-links a {
+  margin-left: 1.5rem;
+  /* spacing between links */
+  text-decoration: none;
+  color: #6EE7B7;
+  font-weight: 600;
+  color: #6EE7B7;
+  transition: 0.2s;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.navbar .nav-links a:hover {
+  color: #00ffff;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    display: none;
+  }
+}
+
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+    /* hidden by default on mobile */
+    flex-direction: column;
+    width: 100%;
+    background: #0a0f1f;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-top: 1px solid #16263a;
+  }
+
+  /* Show nav-links when active */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 1rem;
+  }
+
+}
+
+/* Tablet adjustments to prevent overflow */
+@media (max-width: 1024px) {
+  .nav-links a {
+    margin-left: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 0.5rem 1rem; /* row-gap and column-gap */
+    width: 100%;
+    background: #0a0f1f;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-top: 1px solid #16263a;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links a {
+    margin: 0; /* remove extra margin so grid controls spacing */
+    text-align: center;
+  }
+
+  .logo {
+    text-align: center;
+  }
+}

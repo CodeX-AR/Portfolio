@@ -1,0 +1,111 @@
+/* src/components/Hero/Hero.css */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  background: #0a0f1f;
+  color: #c0c0c0;
+  font-family: "Fira Code", monospace;
+  border-bottom: 2px solid #16263a;
+}
+
+.hero-text {
+  max-width: 500px;
+  box-sizing: border-box;
+
+}
+
+.hero-text h1 {
+  font-family: "Fira Code", monospace;
+  font-size: 3rem;
+  color: #00ffff;
+}
+
+.hero-text h1 span {
+  font-size: 3rem;
+  color: #00ffff;
+  white-space: nowrap;
+}
+
+.hero-text p {
+  white-space: normal;
+  overflow-wrap: break-word;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #6EE7B7;
+  margin: 0 1rem;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #6EE7B7;
+  color: #facc15;
+  text-decoration: none;
+  font-family: 'Fira Code', monospace;
+  transition: 0.2s;
+}
+
+.hero-button:hover {
+  background: #6EE7B7;
+  color: #0a0f1f;
+}
+
+.hero-right img {
+  width: 500px;
+  max-width: 100%;
+  border: 2px solid #6EE7B7;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h1 span {
+    font-size: 2rem;
+  }
+
+  .hero-right img {
+    /* margin-top: 1.5rem;
+      width: 250px;  */
+    display: none;
+  }
+}
+
+@media (max-width: 415px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.2rem; 
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text h1 span {
+    font-size: 1.5rem;
+  }
+
+  .hero-right img {
+    /* margin-top: 1.5rem;
+      width: 250px;  */
+    display: none;
+  }
+
+  .hero-text p {
+    font-size: 0.65rem;
+
+  }
+}
