@@ -26,7 +26,7 @@ const Resume = () => {
         <div className="resume-box">
         <h2>{`{Resume}`}</h2>
         <div class="spacer"></div>
-        <a href="/Raj's Resume.pdf" download className="resume-button">
+        <a href="/Resume.pdf" download className="resume-button">
           Download Resume
         </a>
       </div>
