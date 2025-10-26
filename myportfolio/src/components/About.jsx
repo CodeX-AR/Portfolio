@@ -7,9 +7,10 @@ const About = () => {
           <div className="about-box">
           <h2>{`{About}`}</h2>
           <p>
-          I am a passionate software developer who loves building efficient,
-          scalable, and user-friendly applications. Always eager to learn new
-          technologies and grow as a developer.
+          I’m a software developer with 2+ years of experience building iOS apps and a growing passion for full-stack development. 
+          Recently, I’ve been focusing on the MERN stack, creating web applications that are both functional and user-friendly.
+           I love turning complex problems into simple, elegant solutions and am always exploring new technologies to make my 
+           work even better.
           </p>
           </div>
 
@@ -23,9 +24,13 @@ const About = () => {
           <span>React</span>
           <span>Node.js</span>
           <span>CSS</span>
-          <span>Html</span>
+          <span>HTML</span>
           <span>Swift</span>
           <span>Git</span>
+          <span>VS Code</span>
+          <span>Postman</span>
+          <span>Render</span>
+      
           
 
         </div>
